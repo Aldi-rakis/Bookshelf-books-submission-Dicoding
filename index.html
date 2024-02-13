@@ -1,0 +1,106 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+
+        <h1>Bookshelf book Apps</h1>
+
+    </div>
+
+    <div class="content">
+        <div class="left">
+            <div class="profile my-box">
+                <div class="profile-icon">
+                    <img src="/images/rakis.png" alt="">
+                    <h2>Aldhi Raqiswandri</h2>
+                    <p>Progammer web Developer</p>
+                </div>
+
+
+                <div class="hitung-buku">
+                    <h3>Jumlah-buku</h3>
+                    <div class="jumlah-buku">
+                        <h4 id="jumlahBuku"></h4>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="icon my-box">
+
+
+                <div class="my-icon">
+                    <div class="add-book" id="add-book">
+                        <i class="fi-sr-add"></i>
+                    </div>
+                    <h5>add</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="my-box header">
+                <h1>Halo selamat datang di Bookself Apps</h1>
+                <p>Bookshelf Apps adalah sebuah website memiliki fitur menambahkan, memindahkan, dan menghapus data
+                    Buku.</p>
+            </div>
+
+            <div class="book-content">
+                <div class="unread" id="unread">
+                    <h5> belum dibaca</h5>
+
+                </div>
+                <div class="read" id="read">
+                    <h5>dibaca</h5>
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+    <div id="modal">
+        <section class="my-box">
+            <h2>New Book</h2>
+            <form id="form">
+                <div class="input-group">
+                    <input type="text" id="title" placeholder="Judul Buku" class="input-form" maxlength="120"
+                        pattern="^[a-zA-Z0-9_ ]*$" required />
+                </div>
+                <div class="input-group">
+                    <input type="text" id="author" placeholder="Author" class="input-form" maxlength="60"
+                        pattern="^[a-zA-Z0-9_ ]*$" required />
+                </div>
+                <div class="input-group">
+                    <input type="number" id="year" placeholder="year" class="input-form" min="1900" max="2026" />
+                </div>
+                <div class="button-group">
+                    <button type="reset" class="close" id="close">Close</button>
+                    <button type="submit" id="save">Save</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+
+
+    <script src="./simpan.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+
+</html>
